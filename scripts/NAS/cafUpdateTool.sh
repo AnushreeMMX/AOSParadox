@@ -1,7 +1,7 @@
 #!/bin/bash
 
 revision_msm8974=LA.BF.1.1.3_rb1.4
-
+#my test checkin
 function extract_8974() {
     for FILE in `egrep -v '(^#|^$)' $1`; do
         OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
